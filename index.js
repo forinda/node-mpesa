@@ -35,7 +35,6 @@ const generateTimestamp = () => {
 
 	return timestamp;
 };
-console.log(generateTimestamp());
 const generateMpesaToken = async (req, res,next) => {
     const mpesaAuthUrl = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
     const auth = Buffer.from(`${MPESA_CONSUMER_KEY}:${MPESA_CONSUMER_SECRET}`).toString('base64');
